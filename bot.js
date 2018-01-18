@@ -18,14 +18,16 @@ function respond() {
   }
 }
 function cool(botReq){
-  if (botReq == 'XLM'){
+  if (botReq == 'Where are we going'){
     return "to the moon"
+  } else if (botReq == "What kind of hands you got") {
+    return "steel hands"
   }
 }
 function postMessage() {
   var botResponse, options, body, botReq;
 
-  botResponse = "to the moon";//cool(botReq);
+  botResponse = cool(botReq);
 
   options = {
     hostname: 'api.groupme.com',
