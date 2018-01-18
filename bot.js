@@ -21,7 +21,9 @@ function respond() {
 function postMessage() {
   var botResponse, options, body, botReq;
 
-  botResponse = cool(return "TESTING MY CRYPTOS");
+  botResponse = cool(){
+    return "TESTING MY CRYPTOS"
+};
 
   options = {
     hostname: 'api.groupme.com',
