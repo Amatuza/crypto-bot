@@ -25,7 +25,7 @@ function cool(botReq){
 function postMessage() {
   var botResponse, options, body, botReq;
 
-  botResponse = cool(botReq);
+  botResponse = "to the moon";//cool(botReq);
 
   options = {
     hostname: 'api.groupme.com',
