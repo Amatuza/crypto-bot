@@ -17,11 +17,15 @@ function respond() {
     this.res.end();
   }
 }
-
+function cool(botReq){
+  if (botReq == 'XLM'){
+    return "to the moon"
+  }
+}
 function postMessage() {
   var botResponse, options, body, botReq;
 
-  botResponse = cool();
+  botResponse = cool(botReq);
 
   options = {
     hostname: 'api.groupme.com',
