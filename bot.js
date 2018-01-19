@@ -17,12 +17,13 @@ function respond() {
     this.res.end();
   }
 }
-function cool(request){
-  if (request.includes('Where are we going')){
+function cool(req){
+  if (req.includes('Where are we going')){
     return "to the moon";
-  } else if (request.includes("What kind of hands you got")) {
+  } else if (req.includes("What kind of hands you got")) {
     return "steel hands";
   }
+  return "Loading up the ship";
 }
 function postMessage(text) {
   var botResponse, options, body, botReq;
