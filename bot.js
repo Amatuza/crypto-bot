@@ -19,9 +19,9 @@ function respond() {
 }
 function cool(botReq){
   if (botReq == 'Where are we going'){
-    return "to the moon"
+    return "to the moon";
   } else if (botReq == "What kind of hands you got") {
-    return "steel hands"
+    return "steel hands";
   }
 }
 function postMessage() {
