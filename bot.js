@@ -9,7 +9,7 @@ function respond() {
 
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
-    postMessage(request);
+    postMessage(request.text);
     this.res.end();
   } else {
     console.log("don't care");
@@ -18,9 +18,9 @@ function respond() {
   }
 }
 function cool(request){
-  if (request == 'Where are we going'){
+  if (request.includes('Where are we going')){
     return "to the moon";
-  } else if (request == "What kind of hands you got") {
+  } else if (request.includes("What kind of hands you got")) {
     return "steel hands";
   }
 }
