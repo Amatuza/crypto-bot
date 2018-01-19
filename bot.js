@@ -26,7 +26,7 @@ function cool(botReq){
 }
 function postMessage() {
   var botResponse, options, body, botReq;
-
+  console.log(botReq);
   botResponse = cool(botReq);
 
   options = {
