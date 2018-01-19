@@ -9,7 +9,7 @@ function respond() {
 
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
-    postMessage();
+    postMessage(request.text);
     this.res.end();
   } else {
     console.log("don't care");
@@ -17,17 +17,17 @@ function respond() {
     this.res.end();
   }
 }
-function cool(botReq){
-  if (botReq == 'Where are we going'){
+function cool(request){
+  if (request == 'Where are we going'){
     return "to the moon";
-  } else if (botReq == "What kind of hands you got") {
+  } else if (request == "What kind of hands you got") {
     return "steel hands";
   }
 }
-function postMessage() {
+function postMessage(text) {
   var botResponse, options, body, botReq;
-  console.log(botReq);
-  botResponse = cool(botReq);
+  console.log(text);
+  botResponse = cool(text);
 
   options = {
     hostname: 'api.groupme.com',
